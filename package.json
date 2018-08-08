@@ -1,0 +1,17 @@
+{
+  "name": "react-native-fixed-scrollview",
+  "version": "1.0.0",
+  "description": "A Native Fixed ScrollView with high performance.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imapolaris/react-native-fixed-scrollview.git"
+  },
+  "author": "alex",
+  "license": "MIT",
+  "homepage": "https://github.com/imapolaris/react-native-fixed-scrollview"
+}
