@@ -9,9 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:imapolaris/react-native-fixed-scrollview.git"
+    "url": "git+ssh://git@github.com/imapolaris/react-native-fixed-scrollview.git"
   },
   "author": "alex",
   "license": "MIT",
-  "homepage": "https://github.com/imapolaris/react-native-fixed-scrollview"
+  "homepage": "https://github.com/imapolaris/react-native-fixed-scrollview",
+  "bugs": {
+    "url": "https://github.com/imapolaris/react-native-fixed-scrollview/issues"
+  },
+  "keywords": [
+    "react-natve",
+    "scrollview",
+    "fixed"
+  ]
 }
