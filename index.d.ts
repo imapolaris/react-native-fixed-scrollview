@@ -9,5 +9,5 @@ declare module 'react-native-fixed-scrollview' {
         showsVerticalScrollIndicator?: boolean;
     }
 
-    export default class ScrollView extends React.Component<FixedScrollViewProps, any> {}
+    export default class FixedScrollView extends React.Component<FixedScrollViewProps, any> {}
 }
