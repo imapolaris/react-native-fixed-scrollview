@@ -18,6 +18,7 @@ import {
     View, ScrollView, Platform, StyleSheet, requireNativeComponent
 } from 'react-native';
 const invariant = require('fbjs/lib/invariant');
+const flattenStyle = StyleSheet.flatten;
 
 /**
  * Component that wraps platform ScrollView while providing
