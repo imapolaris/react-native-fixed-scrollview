@@ -8,6 +8,8 @@ declare module 'react-native-fixed-scrollview' {
         showsHorizontalScrollIndicator?: boolean;
         showsVerticalScrollIndicator?: boolean;
         style?: any;
+
+        onScroll?(event: Object): void;
     }
 
     export default class FixedScrollView extends React.Component<FixedScrollViewProps, any> {}
