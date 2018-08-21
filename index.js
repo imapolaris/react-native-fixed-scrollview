@@ -9,16 +9,17 @@
  * @providesModule FixedScrollView
  * @flow
  */
-'use strict';
+//'use strict';
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and
  * run Flow. */
 import React from 'react';
 import {
-    View, ScrollView, Platform, StyleSheet, requireNativeComponent
+    View, ScrollView, Platform, StyleSheet, requireNativeComponent, ViewPropTypes
 } from 'react-native';
 const invariant = require('fbjs/lib/invariant');
 const flattenStyle = StyleSheet.flatten;
+const PropTypes = require('prop-types');
 
 /**
  * Component that wraps platform ScrollView while providing
@@ -57,6 +58,20 @@ const flattenStyle = StyleSheet.flatten;
  */
 // $FlowFixMe(>=0.41.0)
 class FixedScrollView extends ScrollView<any, any> {
+    static propTypes = {
+        ...ViewPropTypes,
+        maxScrollHeight: PropTypes.number,
+        autoScroll:PropTypes.bool,
+        autoScrollAnimated:PropTypes.bool,
+        autoScrollThresholdUp:PropTypes.number,
+        autoScrollThresholdDown:PropTypes.number,
+        showsHorizontalScrollIndicator: PropTypes.bool,
+        showsVerticalScrollIndicator: PropTypes.bool,
+        onScroll: PropTypes.func,
+        horizontal: PropTypes.bool,
+        ...ScrollView.propTypes
+    }
+
     render() {
         let ScrollViewClass;
         let ScrollContentContainerViewClass;
