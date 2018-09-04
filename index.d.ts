@@ -15,6 +15,10 @@ declare module 'react-native-fixed-scrollview' {
         autoScrollThresholdDown?:number;
 
         onScroll?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
+        onScrollBeginDrag?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
+        onScrollEndDrag?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
+        onMomentumScrollEnd?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
+        onMomentumScrollBegin?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
     }
 
     export default class FixedScrollView extends React.Component<FixedScrollViewProps, any> {}
