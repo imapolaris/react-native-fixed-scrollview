@@ -1,6 +1,6 @@
 {
   "name": "react-native-fixed-scrollview",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Native Fixed ScrollView with high performance.",
   "main": "index.js",
   "types": "index.d.ts",

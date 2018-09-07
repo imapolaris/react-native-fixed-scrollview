@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactNative from 'react-native';
-import {NativeScrollEvent, NativeSyntheticEvent} from "react-native";
+import {NativeScrollEvent, NativeSyntheticEvent, RefreshControlProps} from "react-native";
 
 declare module 'react-native-fixed-scrollview' {
     export interface FixedScrollViewProps {
@@ -13,6 +13,11 @@ declare module 'react-native-fixed-scrollview' {
         autoScrollAnimated?:boolean;
         autoScrollThresholdUp?:number;
         autoScrollThresholdDown?:number;
+        overScrollMode?: "auto" | "always" | "never";
+        scrollEnabled?:boolean;
+        scrollEventThrottle?:number;
+        scrollsToTop?:boolean;
+        refreshControl?: React.ReactElement<RefreshControlProps>;
 
         onScroll?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
         onScrollBeginDrag?(event: NativeSyntheticEvent<NativeScrollEvent>): void;
